@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test name="Parallel" parallel="methods" thread-count="3">
+        <classes>
+            <class name="test.TC_Login">
+                <methods>
+                    <include name="LoginTest1"/>
+                    <include name="LoginTest2"/>
+                    <include name="LoginTest3"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
